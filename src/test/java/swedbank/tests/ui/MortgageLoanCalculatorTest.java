@@ -39,13 +39,13 @@ public class MortgageLoanCalculatorTest extends BaseTest {
         assertThat("Label loan amount is correct", mortgageLoanCalculatorPage.getChooseLoanAmountSliderLabel(), equalTo(loanAmount + " €"));
         assertThat("Label loan Term is correct", mortgageLoanCalculatorPage.getChooseLoanTermSliderLabel(), equalTo(loanTerm + " years"));
 
-        assertThat("Label loan Term is correct", mortgageLoanCalculatorPage.getInsureYourHome(), equalTo("6.96"));
-        assertThat("Label loan Term is correct", mortgageLoanCalculatorPage.getInsureYourLife(), equalTo("12.60"));
-        assertThat("Label loan Term is correct", mortgageLoanCalculatorPage.getInsureYourLoanPayments(), equalTo("11.59"));
+        assertThat("Result of calculation Insure your Home is correct", mortgageLoanCalculatorPage.getInsureYourHome(), equalTo("6.96"));
+        assertThat("Result of calculation Insure your Life is correct", mortgageLoanCalculatorPage.getInsureYourLife(), equalTo("12.60"));
+        assertThat("Result of calculation Insure your Loan payments is correct", mortgageLoanCalculatorPage.getInsureYourLoanPayments(), equalTo("11.59"));
 
-        assertThat("Label loan Term is correct", mortgageLoanCalculatorPage.getLoanMonthlyPayment(), equalTo("386"));
-        assertThat("Label loan Term is correct", mortgageLoanCalculatorPage.getLoanMaximumAmount(), equalTo("49739"));
-        assertThat("Label loan Term is correct", mortgageLoanCalculatorPage.getLoanHomePrice(), equalTo("0"));
+        assertThat("Result of calculation Loan Monthly loan payment is correct", mortgageLoanCalculatorPage.getLoanMonthlyPayment(), equalTo("386"));
+        assertThat("Result of calculation Loan Maximum loan amount is correct", mortgageLoanCalculatorPage.getLoanMaximumAmount(), equalTo("49739"));
+        assertThat("Result of calculation Loan Maximum home price is correct", mortgageLoanCalculatorPage.getLoanHomePrice(), equalTo("0"));
     }
 
 
